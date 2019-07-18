@@ -5,7 +5,6 @@ body {
     background-color: #f9fafc;
 	max-width: 1250px;
 	margin: 0 auto;
-	padding: 20px 60px;
 }
 
 p {
@@ -38,6 +37,7 @@ a:link {
     text-decoration: none;
     padding: 10px;
 }
+
 #scroll {
 	background-color: #000000;
     font-size: 16px;
@@ -64,18 +64,9 @@ button:hover {
 .contact-tab:hover {
 	background-color: #CCC;
 }
-.contact-tab >a:hover {
-	color: #FF4850;
-}
 
 .h1 {
 	font-weight: 800;
-}
-h1 span {
-	color: #FF4850;
-}
-h2 span {
-	color: #FF4850;
 }
 
 .inner-content {
@@ -130,15 +121,28 @@ h2 span {
 		background-size: auto;
 		padding: 20px;
 	}
-		button {
-			width: 100%;
-		}
 		.contact-tab {
 			text-align: center;
+			width: 100%;
 		}
+		
+		#scroll {
+			display: inline-block;
+			text-align: center;
+			width: 100%;
+			position: none;
+			top: 0px;
+			left: 0%;
+			padding: 10px;
+		}
+
 		.inner-content {
 			padding-top: 20px;
 			max-width: none;
+		}
+
+		.circle, .circle2, .circle3 {
+			display: none;
 		}
 
 		.main-header {
@@ -147,12 +151,10 @@ h2 span {
 			 	flex-direction: column;
 		}
 
-		p {
-			font size: 1.25rem;
-    }
 		.topnav li {
-			 margin: 3px 0;
+			 margin: 5px 0;
 		}
+		
 		ul.topnav {
 		  flex-direction: column;
 			padding-left: 0;
